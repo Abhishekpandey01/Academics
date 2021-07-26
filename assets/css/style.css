@@ -13,9 +13,18 @@
     src: url("../fonts/Muli-ExtraLight.ttf") format("ttf");
 }
 
+
+body {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1.1rem;
+    font-family: "Muli", sans-serif;
+}
+
 /* Top header */
 .small, small {
-    font-size: 90%;
+    font-family: "Muli", sans-serif;
     font-weight: 400;
 }
 
@@ -27,6 +36,7 @@ a {
 a.small.mr-3:hover {
     color: #05200f;;
     text-decoration: none;
+    font-family: "Muli", sans-serif;
 }
 
 .btn-primary {
@@ -35,14 +45,20 @@ a.small.mr-3:hover {
     border-color: #51be78;
     font-size: 17px;
     font-weight: 350;
+    font-family: "Muli", sans-serif;
 }
 
 /* End top-header */
 
 
-
-
-/* Main-header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    box-shadow: 4px 0 20px -5px rgb(0 0 0 / 20%);
+}
 
 li.active {
     color: #51be78;
@@ -51,6 +67,7 @@ li.active {
     display: inline-block;
     font-weight: 300;
     font-size: 18px;
+    font-family: "Muli", sans-serif;
 }
 .nav-item{
     padding: 20px 20px;
@@ -59,6 +76,7 @@ li.active {
     text-decoration: none!important;
     font-weight: 300;
     font-size: 18px;
+    /* font-family: "Muli", sans-serif; */
 }
 
 .facebook {
@@ -122,9 +140,10 @@ i.fa.fa-twitter{
 
 } 
 .slider-heading{ 
-font-size: 7rem;
+    font-size: 7rem;
     font-weight: 900;
     color: #fff; 
+    font-family: "Muli", sans-serif;
 }
 .pre {
     height: 39px;
@@ -170,6 +189,8 @@ section.feature-sec {
 h2.feature-heading{
     border-bottom: 4px solid #51be78;
     width: fit-content;
+    color: #000;
+    font-family: "Muli", sans-serif;
 }
 .icon-box.text-center {
     position: relative;
@@ -208,7 +229,7 @@ i.fa.fa-graduation-cap {
     z-index: -1;
     width: 67.88px;
     height: 67.88px;
-   bottom: -33px;
+    bottom: -33px;
     transform: scaleY(.5774) rotate(-45deg);
     background-color: inherit;
     left: 14.06px;
@@ -218,6 +239,8 @@ i.fa.fa-graduation-cap {
 }
 h2.content-heading {
     font-size: 1.3rem;
+    color: #000;
+    font-family: "Circular-Medium", sans-serif;
 }
 /* End feature sec */
 
@@ -239,6 +262,8 @@ p.about-text {
     line-height: 1.8;
     font-weight: 300;
     font-size: 1.1rem;
+    font-family: "", sans-serif;
+   
 }
 /* End About */
 
@@ -249,6 +274,7 @@ section.testimonial-sec {
 h2.testi-heading {
     border-bottom: 4px solid #51be78;
     width: fit-content;
+    color: #000;
 }
 img.testimonial-img {
     width: 50px;
@@ -260,14 +286,24 @@ img.testimonial-img {
 /* Activity */
 
 .activity-section{
-    
-   padding: 4rem 0;
+    position: relative;
+    padding: 4rem 0;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-   
-   
+    background-repeat: no-repeat; 
 }
+.activity-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #183661;
+    opacity: .9;
+    z-index: 0;
+}
+
 h3.icon-heading {
     font-size: 20px;
     color: #51be78;
@@ -297,6 +333,7 @@ section.news-updates {
 }
 h2.news-heading {
     line-height: 0.9;
+    color: #000;
 }
 h3.news-heading {
     font-size: 18px;
@@ -397,3 +434,13 @@ section.footer {
 }
 
 /* End Footer */
+
+
+
+/* Responsive  */
+
+@media (max-width: 575px){
+    .link { 
+        line-height: 0px;
+}
+}
