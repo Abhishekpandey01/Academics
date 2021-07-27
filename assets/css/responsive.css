@@ -1,0 +1,83 @@
+/* Responsive  */
+
+@media (max-width: 575px){
+    .link { 
+        line-height: 0px;
+    }
+  
+    /* slider sec*/
+    h1.slider-heading {
+        font-size: 35px;
+    }
+    .carousel-item {
+        background-image: url(/assets/images/slider1.webp);
+            height: 50vh;
+            min-height: 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        .row.align-items-center.slider-row {
+            height: 50vh;
+            min-height: 0px;
+        }
+
+        /*feature sec  */
+        h2.feature-heading.mb-5 {
+            font-size: 25px;
+            width:auto;
+        }
+        h2.content-heading {
+            font-size: 20px;
+        }
+        p.content-text {
+            font-size: 15px;
+        }
+        span.courses {
+            font-size: 25px;
+        }
+        /* About sec */
+        h2.text-white.about-universitty {
+            font-size: 25px;
+        }
+        p.about-text {
+            font-size: 15px;
+        }
+        p.lead {
+            font-size: 17px;
+        }
+        /* Testimonial */
+        h2.testi-heading {
+            font-size: 25px;
+        }
+        /* Activity */
+        section.news-updates {
+            padding: 2rem 0;
+        }
+        p.icon-text {
+            font-size: 15px;
+        }
+        /* news */
+        img.img-fluid.horizontal-image {
+            width: auto;
+        }
+        h2.news-heading {
+            font-size: 25px;
+        }
+        p.text-white.news-text {
+            font-size: 15px !important;
+        }
+        /* footer */
+        .copyright-sec {
+            padding-top: 2rem;
+        }
+        
+    }
+
+    @media (min-width: 1024px) and (max-width:1200px){
+
+        .facebook.mb-2 {
+            display: none;
+        }
+    }

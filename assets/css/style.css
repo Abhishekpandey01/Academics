@@ -30,7 +30,7 @@ body {
 
 a {
     color: #51be78;
-    text-decoration: none;
+    text-decoration: none!important;
     background-color: transparent;
 }
 a.small.mr-3:hover {
@@ -50,6 +50,21 @@ a.small.mr-3:hover {
 
 /* End top-header */
 
+
+i.fa.fa-bars {
+    color: #fff;
+    margin-top: 6px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 47%;
+    z-index: 9;
+    background: #fff;
+    width: 320px;
+    left: 0;
+    padding-left: 20px;
+}
 
 .sticky {
     position: fixed;
@@ -78,6 +93,33 @@ li.active {
     font-size: 18px;
     /* font-family: "Muli", sans-serif; */
 }
+.dropdown-menu1 {
+    position: absolute;
+  
+    z-index: 1000;
+    left: 32%;
+    float: left;
+    min-width: 10rem;
+    padding: 9px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 2px solid #51be78;
+    border-left: 1px solid #edf0f5;
+    border-right: 1px solid #edf0f5;
+   
+    box-shadow: 0 2px 10px -2px rgb(0 0 0 / 10%);
+    transform: scale(0);
+    transition: ease-out 0.3s;
+}
+
+.active-item:hover .dropdown-menu1{
+    transform: scale(1);
+}
 
 .facebook {
     display: inline-block;
@@ -105,6 +147,15 @@ i.fa.fa-twitter{
 
 
 
+.mobile-menu1.mb-2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #51be78;
+    position: absolute;
+    top: 25%;
+    right: 40%;
+}
 
 
 /* Slider-section */
@@ -180,6 +231,21 @@ li.indicater {
     border-radius: 50%;
 }
 /* End slider-section */
+
+/* courses sec */
+.course-1-item {
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Feature sec */
 
@@ -436,11 +502,8 @@ section.footer {
 /* End Footer */
 
 
-
-/* Responsive  */
-
-@media (max-width: 575px){
-    .link { 
-        line-height: 0px;
-}
+/* courses */
+span.courses {
+    color: #000;
+    border-bottom: 4px solid #51be78;
 }
